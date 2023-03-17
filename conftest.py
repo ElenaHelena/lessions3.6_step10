@@ -8,7 +8,7 @@ driver = webdriver.Chrome(ChromeDriverManager().install())
 
 def pytest_addoption(parser):
     parser.addoption('--language', action='store', default="chrome",
-                     help="Choose language: '--language=en' or '--language=ru'")
+                     help="Choose language: '--language=en' or '--language=ru' or '--language=es' or '--language=fr'")
 
 
 @pytest.fixture(scope="function")
